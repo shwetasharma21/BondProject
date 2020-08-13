@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    tools:context=".teacher.teacherScreen.ProfileFragment">
+
+    <TextView
+        android:id="@+id/profileTeacherNameTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginFirst"
+        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileTeacherEmailTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBetween"
+        android:text="Email"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/profileTeacherNameTxtView" />
+
+    <LinearLayout
+        android:id="@+id/profileTeacherLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileTeacherEmailTxtView">
+
+        <EditText
+            android:id="@+id/profileTeacherOrgNameEdTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBetween"
+            android:layout_weight="1"
+            android:hint="Organization Name"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/profileTeacherOrgNameEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profileTeacherLinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profileTeacherLinearLayout">
+
+        <EditText
+            android:id="@+id/profileTeacherOrgWebsiteEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBetween"
+            android:layout_weight="1"
+            android:hint="Organization Website Link"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/profileTeacherOrgWebsiteEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/profileTeacherLinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profileTeacherLinearLayout2">
+        <EditText
+            android:id="@+id/profileTeacherCodeEditTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Code"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:id="@+id/profileTeacherCodeEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/save"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

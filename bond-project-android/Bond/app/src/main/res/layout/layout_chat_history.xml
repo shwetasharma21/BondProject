@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/layoutChatHistorySenderTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bora"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/layoutChatHistoryMsgTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bora ka msg"
+        app:layout_constraintTop_toBottomOf="@id/layoutChatHistorySenderTxtView"/>
+    <TextView
+        android:id="@+id/layoutChatHistoryMsgTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5sp"
+        android:text="11:50"
+        app:layout_constraintTop_toBottomOf="@id/layoutChatHistoryMsgTxtView"
+        android:layout_marginTop="5sp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
